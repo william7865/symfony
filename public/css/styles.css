@@ -1,0 +1,339 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color:#FAF8F6;
+}
+
+/* Section Home */
+.home {
+    height: 100vh;
+    background: linear-gradient(45deg, #dd1173, #350e47);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav .info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Contenu aligné à gauche et à droite */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.text-section {
+    width: 50%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.text-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff0076;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-style: italic;
+    
+}
+
+.btn:hover {
+    background-color: #d60065;
+}
+
+/* Image de l'avion à droite */
+.image-section {
+    width: 50%;
+    text-align: right;
+}
+
+.image-section img {
+    width: 80%;
+    max-width: 450px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 2rem;
+}
+
+.scroll-down span {
+    color: white;
+    font-size: 2rem;
+}
+/* Section Nouveautes */
+#nouveautes {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    height :100vh;
+    font-family: initial;
+}
+.nouveautes h1{
+    font-size: 2.5rem;
+}
+
+.nouveautes h1, .nouveautes p {
+    margin-bottom:20px;
+}
+.nouveautes p {
+    font-style: oblique;
+    color:#FAF8F6;
+}
+
+.nouveautes img {
+    width: 100%;
+    max-width: 800px; /* Limite la taille maximale de l'image */
+    height: auto;
+    border-radius: 10px;
+}
+/* Section Statistiques */
+.page3 {
+    padding: 50px 0;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Première ligne de statistiques avec icônes */
+.stats_1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px; /* Augmente l'espace entre stats_1 et stats_2 */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.produit {
+    flex: 1;
+    max-width: 250px;
+}
+
+.produit img {
+    width: 50px; /* Taille des icônes */
+    margin-bottom: 10px;
+}
+
+.produit h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Deuxième ligne de statistiques */
+.stats_2 {
+    display: flex;
+    justify-content: space-between; /* Espace les éléments sur toute la largeur */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px; /* Ajoute de l'espace entre les deux sections */
+}
+
+.stats_2 div {
+    flex: 1;
+    max-width: 150px;
+    padding: 0 20px; /* Ajoute de l'espacement autour des items pour plus d'air */
+}
+
+.stats_2 h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.stats_2 h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Section Partant */
+.partant {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: initial;
+}
+.partant p {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Taille intermédiaire pour le sous-titre */
+    color: #6c757d; /* Gris clair */
+    margin-bottom: 30px;
+    line-height: 1.5; /* Meilleure lisibilité */
+    font-family: initial;
+    font-style: oblique;
+}
+
+.partant-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.partant-text {
+    flex: 1;
+    text-align: left;
+}
+
+.partant-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn-partant {
+    background-color: #ff0076;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    font-style:italic;
+}
+
+.btn-partant:hover {
+    background-color: #d60065;
+}
+
+.partant-image {
+    flex: 1;
+    text-align: right;
+}
+
+.partant-image img {
+    width: 80%; /* Ajustement de la largeur de l'image */
+    max-width: 500px; /* Limite maximale pour éviter que l'image devienne trop grande */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Formulaire */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+.form-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-container div {
+    margin-bottom: 20px;
+}
+
+.form-container button {
+    background-color: #ff0076;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #d60065;
+}
+
+.form-container div label {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
