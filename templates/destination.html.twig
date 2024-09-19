@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Agence Site{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/destination.css') }}">
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="logo">
+            <img src="{{ asset('images/Trip_advice.png') }}" alt="Trip Advice Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+       
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hotel">
+            <div class="image-container">
+                <img src="{{ asset('images/bali_loge.jpg') }}" alt="Hôtel">
+            </div>
+            <div class="description">
+                <h2>HÔTEL, LOGEMENT</h2>
+                <p>Vous serez accueilli dans un hôtel 5 étoiles avec repas, matin, midi et soir compris. Vous trouverez aussi une piscine réservée à l'hôtel.</p>
+            </div>
+        </section>
+          <section class="photo-gallery">
+            <div class="gallery-item">
+                <img src="images/waterfall.jpg" alt="Magnifique Paysage">
+                <div class="caption">
+                    <h4>PHOTOGRAPHY</h4>
+                    <p>LORS DE VOTRE VOYAGE VOUS AUREZ L'OCCASION DE RENCONTREZ DE MAGNIFIQUE PAYSAGES</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gastro.jpg" alt="Gastronomie de Bali">
+                <div class="caption">
+                    <h4>PHOTOGRAPHY</h4>
+                    <p>DÉCOUVREZ AUSSI LA GASTRONOMIE DE BALI, FAIT PARS NOS CHEFS</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/voyage.png" alt="Bon voyage">
+                <div class="caption">
+                    <h4>PHOTOGRAPHY</h4>
+                    <p>NOTRE COMPAGNIE S'ASSURERA QUE VOUS PASSEZ UN BON VOYAGE</p>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

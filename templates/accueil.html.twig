@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>{% block title %}Agence Site{% endblock %}</title>
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22> </text></svg>">
+      <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+      {% block stylesheets %}
+          {{encore_entry_link_tags('app') }}
+      {% endblock %}
+      {% block javascripts %}
+          {{encore_entry_script_tags('app') }}
+      {% endblock %}
+  </head>
+  <body>
+      {% block body %}
+      <section class="home">
+        <nav>
+            <div class="logo">
+                <img src="{{ asset('images/Trip_advice.png') }}" alt="Trip Advice Logo">
+            </div>
+            <div class="info">
+                <a href="#propos">A propos</a>
+                <a href="#nouveautes">Nouveautés</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="text-section">
+                <h1>Bienvenue Sur Trip Advice</h1>
+                <h2>Voyagez comme vous êtes !</h2>
+                <a href="#destinations" class="btn">Voir les destinations</a>
+            </div>
+            <div class="image-section">
+                <img src="{{ asset('images/avion.png') }}" alt="Avion">
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>&#x2193;</span>
+        </div>
+    </section>
+
+    <section id="nouveautes">
+      <div class="nouveautes">
+        <h1>CE QUE NOUS PROPOSONS</h1>
+        <p>
+          1 ALLEZ - RETOURS VERS BALI<br />
+          POUR SEULEMENT 1€ SYMBOLIQUE
+        </p>
+        <img src="{{ asset('images/bali.jpg') }}" alt="avion" />
+      </div>
+    </section>
+
+    <!-- Section Partant -->
+<section class="partant">
+    <div class="partant-container">
+        <div class="partant-text">
+            <h1>Partant(e) ?</h1>
+            <p> Votre été commence ici.
+                Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style.Commencez par choisir votre activité préférée.</p>
+                
+            <a href="destination" class="btn-partant">Rejoins-Nous !</a>
+        </div>
+        <div class="partant-image">
+            <img src="{{ asset('images/bali2.png') }}" alt="avion" />
+        </div>
+    </div>
+</section>
+<!-- Section Page3 -->
+<section class="page3">
+    <div class="stats_1">
+        <div class="produit">
+            <img src="{{ asset('images/produits.png') }}" alt="Produits locaux">
+            <h3>Produits locaux</h3>
+        </div>
+        <div class="produit">
+            <img src="{{ asset('images/couverts.png') }}" alt="Restauration incluse">
+            <h3>Restauration incluse</h3>
+        </div>
+        <div class="produit">
+            <img src="{{ asset('images/stats.png') }}" alt="De plus en plus d'utilisateurs">
+            <h3>De plus en plus d'utilisateurs</h3>
+        </div>
+    </div>
+    <div class="stats_2">
+        <div class="produit">
+            <h2>+1k</h2>
+            <h3>Utilisateur par mois</h3>
+        </div>
+        <div class="avis">
+            <h2>84</h2>
+            <h3>Avis</h3>
+        </div>
+        <div class="etoiles">
+            <h2>4,6</h2>
+            <h3>Sur 5 étoiles</h3>
+        </div>
+        <div class="heures">
+            <h2>24h</h2>
+            <h3>Temps de réponse</h3>
+        </div>
+    </div>
+</section>
+    <section class = "form">
+        <div class="form-container">
+            <form action="index.php" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                
+                <label for="prénom">Prénom :</label>
+                <input type="text" id="prénom" name="prénom" required>
+                
+                <label for="adresse">Adresse :</label>
+                <textarea id="adresse" name="adresse" rows="4" required></textarea>
+                
+                <label for="codePostal">Code Postal :</label>
+                <input type="text" id="codePostal" name="codePostal" required>
+                
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" required>
+                
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required> 
+
+                <div>
+                    <label>Carte de VTC :</label>
+                    <input type="radio" id="oui" name="carte_vtc" value="Oui">
+                    <label for="oui">Oui</label>
+                    <input type="radio" id="non" name="carte_vtc" value="Non">
+                    <label for="non">Non</label>
+                </div>
+                <div>
+                    <label>Société :</label>
+                    <input type="radio" id="oui" name="société" value="Oui" required>
+                    <label for="oui">Oui</label>            
+                    <input type="radio" id="non" name="société" value="Non" required>
+                    <label for="non">Non</label>
+                </div>
+                <button type="submit" name="valider">Valider</button>
+            </form>
+        </div>
+    </section>
+
+    {% endblock %}
+  </body>
+</html>
