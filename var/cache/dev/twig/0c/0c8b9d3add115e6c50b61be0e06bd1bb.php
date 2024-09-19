@@ -29,14 +29,16 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
 
         $this->source = $this->getSourceContext();
 
-        $this->parent = false;
-
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'stylesheets' => [$this, 'block_stylesheets'],
-            'javascripts' => [$this, 'block_javascripts'],
             'body' => [$this, 'block_body'],
         ];
+    }
+
+    protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
+    {
+        // line 1
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = []): iterable
@@ -48,46 +50,17 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "accueil.html.twig"));
 
-        // line 1
-        yield "<!DOCTYPE html>
-<html>
-  <head>
-      <meta charset=\"UTF-8\">
-      <title>";
-        // line 5
-        yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
-        yield "</title>
-      <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22> </text></svg>\">
-      <link rel=\"stylesheet\" href=\"";
-        // line 7
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/styles.css"), "html", null, true);
-        yield "\">
-      ";
-        // line 8
-        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 11
-        yield "      ";
-        yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 14
-        yield "  </head>
-  <body>
-      ";
-        // line 16
-        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 125
-        yield "  </body>
-</html>
-";
+        $this->parent = $this->loadTemplate("base.html.twig", "accueil.html.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-        yield from [];
     }
 
-    // line 5
+    // line 3
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -110,61 +83,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         yield from [];
     }
 
-    // line 8
-    /**
-     * @return iterable<null|scalar|\Stringable>
-     */
-    public function block_stylesheets(array $context, array $blocks = []): iterable
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 9
-        yield "          ";
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
-        yield "
-      ";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-        yield from [];
-    }
-
-    // line 11
-    /**
-     * @return iterable<null|scalar|\Stringable>
-     */
-    public function block_javascripts(array $context, array $blocks = []): iterable
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
-        // line 12
-        yield "          ";
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
-        yield "
-      ";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-        yield from [];
-    }
-
-    // line 16
+    // line 5
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -177,90 +96,89 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 17
-        yield "      <section class=\"home\">
-        <nav>
-            <div class=\"logo\">
-                <img src=\"";
-        // line 20
+        // line 6
+        yield "<link rel=\"stylesheet\" href=\"";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/styles.css"), "html", null, true);
+        yield "\">
+<section class=\"home\">
+    <nav>
+        <div class=\"logo\">
+            <img src=\"";
+        // line 10
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Trip_advice.png"), "html", null, true);
         yield "\" alt=\"Trip Advice Logo\">
-            </div>
-            <div class=\"info\">
-                <a href=\"#propos\">A propos</a>
-                <a href=\"#nouveautes\">Nouveautés</a>
-            </div>
-        </nav>
-        <div class=\"content\">
-            <div class=\"text-section\">
-                <h1>Bienvenue Sur Trip Advice</h1>
-                <h2>Voyagez comme vous êtes !</h2>
-                <a href=\"#destinations\" class=\"btn\">Voir les destinations</a>
-            </div>
-            <div class=\"image-section\">
-                <img src=\"";
-        // line 34
+        </div>
+        <div class=\"info\">
+            <a href=\"#propos\">A propos</a>
+            <a href=\"#nouveautes\">Nouveautés</a>
+        </div>
+    </nav>
+    <div class=\"content\">
+        <div class=\"text-section\">
+            <h1>Bienvenue Sur Trip Advice</h1>
+            <h2>Voyagez comme vous êtes !</h2>
+            <a href=\"destination\" class=\"btn\">Voir les destinations</a>
+        </div>
+        <div class=\"image-section\">
+            <img src=\"";
+        // line 24
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/avion.png"), "html", null, true);
         yield "\" alt=\"Avion\">
-            </div>
         </div>
-        <div class=\"scroll-down\">
-            <span>&#x2193;</span>
-        </div>
-    </section>
+    </div>
+    <div class=\"scroll-down\">
+        <span>&#x2193;</span>
+    </div>
+</section>
 
-    <section id=\"nouveautes\">
-      <div class=\"nouveautes\">
+<section id=\"nouveautes\">
+    <div class=\"nouveautes\">
         <h1>CE QUE NOUS PROPOSONS</h1>
-        <p>
-          1 ALLEZ - RETOURS VERS BALI<br />
-          POUR SEULEMENT 1€ SYMBOLIQUE
-        </p>
+        <p>1 ALLEZ - RETOURS VERS BALI<br />POUR SEULEMENT 1€ SYMBOLIQUE</p>
         <img src=\"";
-        // line 49
+        // line 36
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/bali.jpg"), "html", null, true);
         yield "\" alt=\"avion\" />
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section Partant -->
+<!-- Section Partant -->
 <section class=\"partant\">
     <div class=\"partant-container\">
         <div class=\"partant-text\">
             <h1>Partant(e) ?</h1>
-            <p> Votre été commence ici.
-                Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style.Commencez par choisir votre activité préférée.</p>
-                
+            <p>Votre été commence ici. Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style. Commencez par choisir votre activité préférée.</p>
             <a href=\"destination\" class=\"btn-partant\">Rejoins-Nous !</a>
         </div>
         <div class=\"partant-image\">
             <img src=\"";
-        // line 64
+        // line 49
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/bali2.png"), "html", null, true);
         yield "\" alt=\"avion\" />
         </div>
     </div>
 </section>
+
 <!-- Section Page3 -->
 <section class=\"page3\">
     <div class=\"stats_1\">
         <div class=\"produit\">
             <img src=\"";
-        // line 72
+        // line 58
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/produits.png"), "html", null, true);
         yield "\" alt=\"Produits locaux\">
             <h3>Produits locaux</h3>
         </div>
         <div class=\"produit\">
             <img src=\"";
-        // line 76
+        // line 62
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/couverts.png"), "html", null, true);
         yield "\" alt=\"Restauration incluse\">
             <h3>Restauration incluse</h3>
         </div>
         <div class=\"produit\">
             <img src=\"";
-        // line 80
+        // line 66
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/stats.png"), "html", null, true);
         yield "\" alt=\"De plus en plus d'utilisateurs\">
             <h3>De plus en plus d'utilisateurs</h3>
@@ -306,7 +224,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
     </section>
 
-    ";
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -337,71 +255,56 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  264 => 80,  257 => 76,  250 => 72,  239 => 64,  221 => 49,  203 => 34,  186 => 20,  181 => 17,  168 => 16,  154 => 12,  141 => 11,  127 => 9,  114 => 8,  91 => 5,  78 => 125,  76 => 16,  72 => 14,  69 => 11,  67 => 8,  63 => 7,  58 => 5,  52 => 1,);
+        return array (  182 => 66,  175 => 62,  168 => 58,  156 => 49,  140 => 36,  125 => 24,  108 => 10,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("<!DOCTYPE html>
-<html>
-  <head>
-      <meta charset=\"UTF-8\">
-      <title>{% block title %}Agence Site{% endblock %}</title>
-      <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22> </text></svg>\">
-      <link rel=\"stylesheet\" href=\"{{ asset('css/styles.css') }}\">
-      {% block stylesheets %}
-          {{encore_entry_link_tags('app') }}
-      {% endblock %}
-      {% block javascripts %}
-          {{encore_entry_script_tags('app') }}
-      {% endblock %}
-  </head>
-  <body>
-      {% block body %}
-      <section class=\"home\">
-        <nav>
-            <div class=\"logo\">
-                <img src=\"{{ asset('images/Trip_advice.png') }}\" alt=\"Trip Advice Logo\">
-            </div>
-            <div class=\"info\">
-                <a href=\"#propos\">A propos</a>
-                <a href=\"#nouveautes\">Nouveautés</a>
-            </div>
-        </nav>
-        <div class=\"content\">
-            <div class=\"text-section\">
-                <h1>Bienvenue Sur Trip Advice</h1>
-                <h2>Voyagez comme vous êtes !</h2>
-                <a href=\"#destinations\" class=\"btn\">Voir les destinations</a>
-            </div>
-            <div class=\"image-section\">
-                <img src=\"{{ asset('images/avion.png') }}\" alt=\"Avion\">
-            </div>
-        </div>
-        <div class=\"scroll-down\">
-            <span>&#x2193;</span>
-        </div>
-    </section>
+        return new Source("{% extends 'base.html.twig' %}
 
-    <section id=\"nouveautes\">
-      <div class=\"nouveautes\">
+{% block title %}Agence Site{% endblock %}
+
+{% block body %}
+<link rel=\"stylesheet\" href=\"{{ asset('css/styles.css') }}\">
+<section class=\"home\">
+    <nav>
+        <div class=\"logo\">
+            <img src=\"{{ asset('images/Trip_advice.png') }}\" alt=\"Trip Advice Logo\">
+        </div>
+        <div class=\"info\">
+            <a href=\"#propos\">A propos</a>
+            <a href=\"#nouveautes\">Nouveautés</a>
+        </div>
+    </nav>
+    <div class=\"content\">
+        <div class=\"text-section\">
+            <h1>Bienvenue Sur Trip Advice</h1>
+            <h2>Voyagez comme vous êtes !</h2>
+            <a href=\"destination\" class=\"btn\">Voir les destinations</a>
+        </div>
+        <div class=\"image-section\">
+            <img src=\"{{ asset('images/avion.png') }}\" alt=\"Avion\">
+        </div>
+    </div>
+    <div class=\"scroll-down\">
+        <span>&#x2193;</span>
+    </div>
+</section>
+
+<section id=\"nouveautes\">
+    <div class=\"nouveautes\">
         <h1>CE QUE NOUS PROPOSONS</h1>
-        <p>
-          1 ALLEZ - RETOURS VERS BALI<br />
-          POUR SEULEMENT 1€ SYMBOLIQUE
-        </p>
+        <p>1 ALLEZ - RETOURS VERS BALI<br />POUR SEULEMENT 1€ SYMBOLIQUE</p>
         <img src=\"{{ asset('images/bali.jpg') }}\" alt=\"avion\" />
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section Partant -->
+<!-- Section Partant -->
 <section class=\"partant\">
     <div class=\"partant-container\">
         <div class=\"partant-text\">
             <h1>Partant(e) ?</h1>
-            <p> Votre été commence ici.
-                Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style.Commencez par choisir votre activité préférée.</p>
-                
+            <p>Votre été commence ici. Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style. Commencez par choisir votre activité préférée.</p>
             <a href=\"destination\" class=\"btn-partant\">Rejoins-Nous !</a>
         </div>
         <div class=\"partant-image\">
@@ -409,6 +312,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         </div>
     </div>
 </section>
+
 <!-- Section Page3 -->
 <section class=\"page3\">
     <div class=\"stats_1\">
@@ -465,9 +369,6 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
     </section>
 
-    {% endblock %}
-  </body>
-</html>
-", "accueil.html.twig", "/Users/shunouu/projet_voyage/symfony-1/templates/accueil.html.twig");
+{% endblock %}", "accueil.html.twig", "/Users/william/symfo_test_dev2/templates/accueil.html.twig");
     }
 }
