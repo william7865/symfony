@@ -158,27 +158,74 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         </div>
     </div>
 </section>
+<!-- Voyage -->
+<section class=\"voyages-2025\">
+    <div class=\"voyages-header\">
+        <h1>Meilleur prix garanti pour tes voyages de 2025</h1>
+        <p>
+        Plonge dans l’aventure de tes rêves avec nos offres exclusives,<br /> et découvre le monde à des prix imbattables ! <br />Chaque voyage est une nouvelle histoire à raconter <br /> commence la tienne dès aujourd'hui !
+        </p>
+        <a href=\"#\" class=\"btn-voyages\">Découvre nos voyages</a>
+    </div>
 
+    <div class=\"voyages-gallery\">
+        <h2>Besoin d'inspiration ? Jette un œil à nos voyages !</h2>
+        <div class=\"voyages-cards\">
+            <div class=\"voyage-card\">
+                <img src=\"";
+        // line 67
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/chine.jpg"), "html", null, true);
+        yield "\" alt=\"Chine°\">
+                <h3>Palais de Chine</h3>
+                <p>963€ seulement</p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"";
+        // line 72
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/chine2.jpg"), "html", null, true);
+        yield "\" alt=\"Chine2\">
+                <h3>La vieille ville chinoise</h3>
+                <p> 789€/personne </p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"";
+        // line 77
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/japon.jpg"), "html", null, true);
+        yield "\" alt=\"Japon\">
+                <h3>Le mont Fuji</h3>
+                <p>500€ Offre spéciale !</p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"";
+        // line 82
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/corée.jpg"), "html", null, true);
+        yield "\" alt=\"Corée\">
+                <h3>Pont sacrée</h3>
+                <p>680€/7jours </p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Section Page3 -->
 <section class=\"page3\">
     <div class=\"stats_1\">
         <div class=\"produit\">
             <img src=\"";
-        // line 58
+        // line 93
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/produits.png"), "html", null, true);
         yield "\" alt=\"Produits locaux\">
             <h3>Produits locaux</h3>
         </div>
         <div class=\"produit\">
             <img src=\"";
-        // line 62
+        // line 97
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/couverts.png"), "html", null, true);
         yield "\" alt=\"Restauration incluse\">
             <h3>Restauration incluse</h3>
         </div>
         <div class=\"produit\">
             <img src=\"";
-        // line 66
+        // line 101
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/stats.png"), "html", null, true);
         yield "\" alt=\"De plus en plus d'utilisateurs\">
             <h3>De plus en plus d'utilisateurs</h3>
@@ -255,7 +302,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  182 => 66,  175 => 62,  168 => 58,  156 => 49,  140 => 36,  125 => 24,  108 => 10,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  229 => 101,  222 => 97,  215 => 93,  201 => 82,  193 => 77,  185 => 72,  177 => 67,  156 => 49,  140 => 36,  125 => 24,  108 => 10,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -312,7 +359,42 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         </div>
     </div>
 </section>
+<!-- Voyage -->
+<section class=\"voyages-2025\">
+    <div class=\"voyages-header\">
+        <h1>Meilleur prix garanti pour tes voyages de 2025</h1>
+        <p>
+        Plonge dans l’aventure de tes rêves avec nos offres exclusives,<br /> et découvre le monde à des prix imbattables ! <br />Chaque voyage est une nouvelle histoire à raconter <br /> commence la tienne dès aujourd'hui !
+        </p>
+        <a href=\"#\" class=\"btn-voyages\">Découvre nos voyages</a>
+    </div>
 
+    <div class=\"voyages-gallery\">
+        <h2>Besoin d'inspiration ? Jette un œil à nos voyages !</h2>
+        <div class=\"voyages-cards\">
+            <div class=\"voyage-card\">
+                <img src=\"{{ asset('images/chine.jpg') }}\" alt=\"Chine°\">
+                <h3>Palais de Chine</h3>
+                <p>963€ seulement</p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"{{ asset('images/chine2.jpg') }}\" alt=\"Chine2\">
+                <h3>La vieille ville chinoise</h3>
+                <p> 789€/personne </p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"{{ asset('images/japon.jpg') }}\" alt=\"Japon\">
+                <h3>Le mont Fuji</h3>
+                <p>500€ Offre spéciale !</p>
+            </div>
+            <div class=\"voyage-card\">
+                <img src=\"{{ asset('images/corée.jpg') }}\" alt=\"Corée\">
+                <h3>Pont sacrée</h3>
+                <p>680€/7jours </p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Section Page3 -->
 <section class=\"page3\">
     <div class=\"stats_1\">
