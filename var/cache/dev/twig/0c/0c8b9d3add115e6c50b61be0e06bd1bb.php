@@ -74,7 +74,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
       ";
         // line 16
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 147
+        // line 125
         yield "  </body>
 </html>
 ";
@@ -231,7 +231,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
             <p> Votre été commence ici.
                 Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style.Commencez par choisir votre activité préférée.</p>
                 
-            <a href=\"#\" class=\"btn-partant\">Rejoins-Nous !</a>
+            <a href=\"destination\" class=\"btn-partant\">Rejoins-Nous !</a>
         </div>
         <div class=\"partant-image\">
             <img src=\"";
@@ -286,46 +286,24 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
 </section>
     <section class = \"form\">
+        <div class=\"container\">
+        <div class=\"text-content\">
+            <h2>Faites un voyage inoubliable</h2>
+            <p>Nous sommes ravis de vous entendre ! Veuillez remplir le formulaire pour nous contacter</p>
+        </div>
         <div class=\"form-container\">
-            <form action=\"index.php\" method=\"POST\">
-                <label for=\"nom\">Nom :</label>
-                <input type=\"text\" id=\"nom\" name=\"nom\" required>
-                
-                <label for=\"prénom\">Prénom :</label>
-                <input type=\"text\" id=\"prénom\" name=\"prénom\" required>
-                
-                <label for=\"adresse\">Adresse :</label>
-                <textarea id=\"adresse\" name=\"adresse\" rows=\"4\" required></textarea>
-                
-                <label for=\"codePostal\">Code Postal :</label>
-                <input type=\"text\" id=\"codePostal\" name=\"codePostal\" required>
-                
-                <label for=\"ville\">Ville :</label>
-                <input type=\"text\" id=\"ville\" name=\"ville\" required>
-                
-                <label for=\"telephone\">Numéro de téléphone :</label>
-                <input type=\"tel\" id=\"telephone\" name=\"telephone\" pattern=\"[0-9]{10}\" required>
-                
-                <label for=\"email\">Email :</label>
-                <input type=\"email\" id=\"email\" name=\"email\" required> 
-
-                <div>
-                    <label>Carte de VTC :</label>
-                    <input type=\"radio\" id=\"oui\" name=\"carte_vtc\" value=\"Oui\">
-                    <label for=\"oui\">Oui</label>
-                    <input type=\"radio\" id=\"non\" name=\"carte_vtc\" value=\"Non\">
-                    <label for=\"non\">Non</label>
-                </div>
-                <div>
-                    <label>Société :</label>
-                    <input type=\"radio\" id=\"oui\" name=\"société\" value=\"Oui\" required>
-                    <label for=\"oui\">Oui</label>            
-                    <input type=\"radio\" id=\"non\" name=\"société\" value=\"Non\" required>
-                    <label for=\"non\">Non</label>
-                </div>
-                <button type=\"submit\" name=\"valider\">Valider</button>
+            <form action=\"#\" method=\"post\">
+                <input type=\"text\" id=\"Nom\" name=\"nom\" placeholder=\"Nom *\" required>
+                <input type=\"text\" id=\"Prenom\" name=\"prénom\" placeholder=\"Prénom *\" required>
+                <input type=\"text\" id=\"address\" name=\"adresse\" placeholder=\"Adresse *\" required>
+                <input type=\"text\" id=\"codePostal\" name=\"code_postal\" placeholder=\"Code Postal *\" required>
+                <input type=\"text\" id=\"Ville\" name=\"ville\" placeholder=\"Ville *\" required>
+                <input type=\"tel\" id=\"telephone\" name=\"telephone\" placeholder=\"Téléphone *\" pattern=\"[0-9]{10}\" required>
+                <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Email *\" required>
+                <button type=\"submit\">Commencez votre journée</button>
             </form>
         </div>
+    </div>
     </section>
 
     ";
@@ -359,7 +337,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  264 => 80,  257 => 76,  250 => 72,  239 => 64,  221 => 49,  203 => 34,  186 => 20,  181 => 17,  168 => 16,  154 => 12,  141 => 11,  127 => 9,  114 => 8,  91 => 5,  78 => 147,  76 => 16,  72 => 14,  69 => 11,  67 => 8,  63 => 7,  58 => 5,  52 => 1,);
+        return array (  264 => 80,  257 => 76,  250 => 72,  239 => 64,  221 => 49,  203 => 34,  186 => 20,  181 => 17,  168 => 16,  154 => 12,  141 => 11,  127 => 9,  114 => 8,  91 => 5,  78 => 125,  76 => 16,  72 => 14,  69 => 11,  67 => 8,  63 => 7,  58 => 5,  52 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -424,7 +402,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
             <p> Votre été commence ici.
                 Découvrez leurs meilleurs conseils pour une escale palpitante de 24 heures, des idées pour des séjours prolongés et explorez le Qatar avec style.Commencez par choisir votre activité préférée.</p>
                 
-            <a href=\"#\" class=\"btn-partant\">Rejoins-Nous !</a>
+            <a href=\"destination\" class=\"btn-partant\">Rejoins-Nous !</a>
         </div>
         <div class=\"partant-image\">
             <img src=\"{{ asset('images/bali2.png') }}\" alt=\"avion\" />
@@ -467,51 +445,29 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
 </section>
     <section class = \"form\">
+        <div class=\"container\">
+        <div class=\"text-content\">
+            <h2>Faites un voyage inoubliable</h2>
+            <p>Nous sommes ravis de vous entendre ! Veuillez remplir le formulaire pour nous contacter</p>
+        </div>
         <div class=\"form-container\">
-            <form action=\"index.php\" method=\"POST\">
-                <label for=\"nom\">Nom :</label>
-                <input type=\"text\" id=\"nom\" name=\"nom\" required>
-                
-                <label for=\"prénom\">Prénom :</label>
-                <input type=\"text\" id=\"prénom\" name=\"prénom\" required>
-                
-                <label for=\"adresse\">Adresse :</label>
-                <textarea id=\"adresse\" name=\"adresse\" rows=\"4\" required></textarea>
-                
-                <label for=\"codePostal\">Code Postal :</label>
-                <input type=\"text\" id=\"codePostal\" name=\"codePostal\" required>
-                
-                <label for=\"ville\">Ville :</label>
-                <input type=\"text\" id=\"ville\" name=\"ville\" required>
-                
-                <label for=\"telephone\">Numéro de téléphone :</label>
-                <input type=\"tel\" id=\"telephone\" name=\"telephone\" pattern=\"[0-9]{10}\" required>
-                
-                <label for=\"email\">Email :</label>
-                <input type=\"email\" id=\"email\" name=\"email\" required> 
-
-                <div>
-                    <label>Carte de VTC :</label>
-                    <input type=\"radio\" id=\"oui\" name=\"carte_vtc\" value=\"Oui\">
-                    <label for=\"oui\">Oui</label>
-                    <input type=\"radio\" id=\"non\" name=\"carte_vtc\" value=\"Non\">
-                    <label for=\"non\">Non</label>
-                </div>
-                <div>
-                    <label>Société :</label>
-                    <input type=\"radio\" id=\"oui\" name=\"société\" value=\"Oui\" required>
-                    <label for=\"oui\">Oui</label>            
-                    <input type=\"radio\" id=\"non\" name=\"société\" value=\"Non\" required>
-                    <label for=\"non\">Non</label>
-                </div>
-                <button type=\"submit\" name=\"valider\">Valider</button>
+            <form action=\"#\" method=\"post\">
+                <input type=\"text\" id=\"Nom\" name=\"nom\" placeholder=\"Nom *\" required>
+                <input type=\"text\" id=\"Prenom\" name=\"prénom\" placeholder=\"Prénom *\" required>
+                <input type=\"text\" id=\"address\" name=\"adresse\" placeholder=\"Adresse *\" required>
+                <input type=\"text\" id=\"codePostal\" name=\"code_postal\" placeholder=\"Code Postal *\" required>
+                <input type=\"text\" id=\"Ville\" name=\"ville\" placeholder=\"Ville *\" required>
+                <input type=\"tel\" id=\"telephone\" name=\"telephone\" placeholder=\"Téléphone *\" pattern=\"[0-9]{10}\" required>
+                <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Email *\" required>
+                <button type=\"submit\">Commencez votre journée</button>
             </form>
         </div>
+    </div>
     </section>
 
     {% endblock %}
   </body>
 </html>
-", "accueil.html.twig", "/Users/william/symfo_test_dev2/templates/accueil.html.twig");
+", "accueil.html.twig", "/Users/shunouu/projet_voyage/symfony-1/templates/accueil.html.twig");
     }
 }

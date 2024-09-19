@@ -1160,3 +1160,8 @@ a5e278,127.0.0.1,GET,http://127.0.0.1:8000/index.php/,1726701647,,200,request
 876266,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1726703402,9d6eea,404,request
 9d6eea,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1726703402,,404,request
 315137,127.0.0.1,GET,http://127.0.0.1:8000/,1726703441,,200,request
+e68950,127.0.0.1,GET,http://127.0.0.1:8000/,1726761911,,200,request
+aa1764,127.0.0.1,GET,http://127.0.0.1:8000/,1726762078,,200,request
+b140f5,127.0.0.1,GET,http://127.0.0.1:8000/css/images/Avion_voyage.jpg,1726762078,15984a,404,request
+15984a,127.0.0.1,GET,http://127.0.0.1:8000/css/images/Avion_voyage.jpg,1726762078,,404,request
+a3a653,127.0.0.1,GET,http://127.0.0.1:8000/,1726762206,,200,request
