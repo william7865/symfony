@@ -16,6 +16,7 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_home_accueil', '_controller' => 'App\\Controller\\HomeController::accueil'], null, null, null, false, false, null]],
         '/destination' => [[['_route' => 'app_home_destination', '_controller' => 'App\\Controller\\HomeController::destination'], null, null, null, false, false, null]],
+        '/base' => [[['_route' => 'app_home_base', '_controller' => 'App\\Controller\\HomeController::base'], null, null, null, false, false, null]],
         '/user' => [[['_route' => 'app_user_index', '_controller' => 'App\\Controller\\UserController::index'], null, ['GET' => 0], null, false, false, null]],
         '/user/new' => [[['_route' => 'app_user_new', '_controller' => 'App\\Controller\\UserController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
     ],

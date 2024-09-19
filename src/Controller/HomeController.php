@@ -32,4 +32,16 @@ class HomeController extends AbstractController
             'destination' => $destination,
         ]);
     }
+    #[Route('/base')]
+    public function base(): Response
+    {
+        $destination = [
+            'name' => 'Paris',
+            'description' => "C'est beau",
+        ];
+
+        return $this->render('base.html.twig', [
+            'destination' => $destination,
+        ]);
+    }
 }

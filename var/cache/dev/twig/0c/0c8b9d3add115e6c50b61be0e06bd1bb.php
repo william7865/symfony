@@ -211,7 +211,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     <div class=\"stats_1\">
         <div class=\"produit\">
             <img src=\"";
-        // line 93
+        //line 93
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/produits.png"), "html", null, true);
         yield "\" alt=\"Produits locaux\">
             <h3>Produits locaux</h3>
