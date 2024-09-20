@@ -109,7 +109,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         yield "\" alt=\"Trip Advice Logo\">
         </div>
         <div class=\"info\">
-            <a href=\"#propos\">A propos</a>
+            <a href=\"#page3\">A propos</a>
             <a href=\"#nouveautes\">Nouveautés</a>
         </div>
     </nav>
@@ -207,11 +207,11 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
 </section>
 <!-- Section Page3 -->
-<section class=\"page3\">
+<section class=\"page3\" id =\"page3\">
     <div class=\"stats_1\">
         <div class=\"produit\">
             <img src=\"";
-        //line 93
+        // line 93
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/produits.png"), "html", null, true);
         yield "\" alt=\"Produits locaux\">
             <h3>Produits locaux</h3>
@@ -250,6 +250,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         </div>
     </div>
 </section>
+<!-- Formulaire -->
     <section class = \"form\">
         <div class=\"container\">
         <div class=\"text-content\">
@@ -319,7 +320,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
             <img src=\"{{ asset('images/Trip_advice.png') }}\" alt=\"Trip Advice Logo\">
         </div>
         <div class=\"info\">
-            <a href=\"#propos\">A propos</a>
+            <a href=\"#page3\">A propos</a>
             <a href=\"#nouveautes\">Nouveautés</a>
         </div>
     </nav>
@@ -396,7 +397,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
 </section>
 <!-- Section Page3 -->
-<section class=\"page3\">
+<section class=\"page3\" id =\"page3\">
     <div class=\"stats_1\">
         <div class=\"produit\">
             <img src=\"{{ asset('images/produits.png') }}\" alt=\"Produits locaux\">
@@ -430,6 +431,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
         </div>
     </div>
 </section>
+<!-- Formulaire -->
     <section class = \"form\">
         <div class=\"container\">
         <div class=\"text-content\">
@@ -451,6 +453,7 @@ class __TwigTemplate_c05c963e22ffa26be496ef401f186038 extends Template
     </div>
     </section>
 
-{% endblock %}", "accueil.html.twig", "/Users/william/symfo_test_dev2/templates/accueil.html.twig");
+{% endblock %}
+", "accueil.html.twig", "/Users/william/symfo_test_dev2/templates/accueil.html.twig");
     }
 }
